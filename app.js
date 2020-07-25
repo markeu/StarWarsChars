@@ -54,35 +54,15 @@ const show = (user) => {
     displayModal.innerHTML = `
             <div class="modal-content">
             <h2> STAR WARS </h2>
-                <p>${name}</p>
-                <p>${height}</p>
-                <p>${gender}</p>
-                <button class="closeModal">CLOSE</button>
+                <p class="item1">CHARACTER: ${name}</p>
+                <p class="item1">HEIGHT: ${height}</p>
+                <p class="item1">GENDER: ${gender}</p>
+                <div class = "button closeModal" id="button-5">
+                  <div id="translate"> </div> <a href = "#" > Close!</a> </div>
                 </div>
             `
     let close = document.querySelector('.closeModal')
     close.onclick = () => {
         displayModal.style.display = 'none'
     }
-
 };
-
-
-//modal
-
-// name.addEventListener("click", (e) => {
-//     displayModal.style.display = "block";
-//     displayModal.innerHTML = `
-//             <div class="modal-content">
-//                 <img src="${imageUrl}" alt=""/>
-//                 <p>${value.name}</p>
-//                 <p>${value.height}</p>
-//                 <p>${value.gender}</p>
-//                 <button class="closeModal">CLOSE</button>
-//                 </div>
-//             `
-//     let close = document.querySelector('.closeModal')
-//     close.onclick = () => {
-//         displayModal.style.display = 'none'
-//     }
-// })
