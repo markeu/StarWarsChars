@@ -1,0 +1,44 @@
+:root {
+    --main-font-family: 'Roboto', sans-serif;
+    --main-bg-color: rgba(46, 21, 49, 1);
+}
+
+body,
+html {
+    height: 100%;
+}
+
+header {
+    height: 100px;
+    background-color: var(--main-bg-color);
+}
+
+header img {
+    width: 185px;
+    height: 60px;
+    color: var(--main-bg-color);
+    margin-top: 18px;
+    margin-left: 43%;
+}
+
+.container {
+    background-image: url('./img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(65%);
+    height: 100%;
+    width: 100%;
+    border-top: solid 5px rgb(153, 96, 96);
+}
+
+.holder {
+    width: 55%;
+    height: 67%;
+    margin-left: 350px;
+    margin-top: 100px;
+    border-radius: 50px;
+    background-color: var(--main-bg-color);
+    box-shadow: inset 60px 0 120px rgb(204, 66, 204), /* left magenta */
+    inset -60px 0 120px rgb(48, 230, 230);
+    /* box-shadow: 40px 20px 30px 10px #0ff; */
+}
