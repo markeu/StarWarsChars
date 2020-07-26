@@ -44,12 +44,12 @@ class User {
 const show = (user) => {
     const index = user.getAttribute("data-user-id");
     let item = result[index];
-    let person = new User(item);
+    let char = new User(item);
     let {
         name,
         height,
         gender
-    } = person.showUser;
+    } = char.showUser;
     displayModal.style.display = "block";
     displayModal.innerHTML = `
             <div class="modal-content">
