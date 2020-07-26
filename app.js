@@ -11,7 +11,8 @@ axios
             use.innerHTML += `
             <figure>
                 <img src="./img/srwars.jpg">
-                <figCaption class="item" onclick = "show(this)" data-user-id=${index}>${res.name}</figCaption> </figure> `;
+                <figCaption class="item" onclick = "show(this)" data-user-id=${index}>${res.name}</figCaption>
+            </figure> `;
         });
     })
     .catch(function(error) {

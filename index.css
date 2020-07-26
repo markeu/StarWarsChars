@@ -27,7 +27,7 @@ header img {
     background-image: url('./img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(80%);
+    filter: brightness(85%);
     width: 100%;
     padding-bottom: 60px;
     border-top: solid 5px rgb(153, 96, 96);
