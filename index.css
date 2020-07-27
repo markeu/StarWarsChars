@@ -18,9 +18,10 @@ header {
 header img {
     width: 185px;
     height: 60px;
-    color: var(--main-bg-color);
-    margin-top: 18px;
-    margin-left: 43%;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .containers {
@@ -36,23 +37,23 @@ header img {
 .holder {
     width: 65%;
     height: 90%;
-    margin-left: 250px;
-    margin-top: 100px;
+    margin: 120px auto 0 auto;
     border-radius: 50px;
     background-color: var(--main-bg-color);
-    box-shadow: inset 60px 0 120px rgb(204, 66, 204), inset -60px 0 120px rgb(48, 230, 230);
+    box-shadow: inset 60px 0 120px rgb(175, 36, 175), inset -60px 0 120px rgb(23, 143, 143);
     color: white;
     text-align: center;
 }
 
 .text {
     position: relative;
-    transform: translate(50%, -50%);
-    margin-left: 350px;
+    /* transform: translate(50%, -50%); */
+    margin: 0 auto;
+    text-align: center;
     text-transform: uppercase;
     font-family: verdana;
     animation-timing-function: linear;
-    font-size: 3.2em;
+    font-size: 45px;
     font-weight: 700;
     color: rgb(58, 26, 58);
     text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
@@ -69,10 +70,9 @@ header img {
 
 figure {
     display: inline-block;
-    margin: 0 30px 30px 0;
-    padding-left: 10px;
-    margin-left: 40px;
-    margin-top: 40px;
+    margin: 30px auto;
+    padding: 20px;
+    width: 150px;
 }
 
 figure>img {
