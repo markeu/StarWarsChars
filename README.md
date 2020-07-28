@@ -14,4 +14,4 @@
 
 - Created a Class User with user property that takes in single user details and returns the details. (modelling spec for data) 
 
-- All implementations are done using es6.
+- All implementations are done using ES6.
