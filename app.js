@@ -2,8 +2,8 @@
 const use = document.querySelector("ul");
 const displayModal = document.querySelector(".displayModal");
 const outClose = document.querySelector(".containers");
-const close = document.querySelector(".closeModal");
-const result;
+
+let result;
 
 //HTTP Request call
 axios
@@ -57,6 +57,7 @@ const showDetails = (user) => {
         height,
         gender
     } = char.showUser;
+
     displayModal.style.display = "block";
     displayModal.innerHTML = `
             <div class="modal-content">
@@ -68,7 +69,7 @@ const showDetails = (user) => {
                   <div id="translate"> </div> <a href = "#" > Close!</a> </div>
                 </div>
             `;
-
+    const close = document.querySelector(".closeModal");
     close.onclick = () => {
         displayModal.style.display = "none";
     };
