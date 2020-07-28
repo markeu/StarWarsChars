@@ -26,12 +26,7 @@ class User {
     }
 
     get showUser() {
-        const {
-            name,
-            gender,
-            height,
-            age
-        } = this.user;
+        const { name, gender, height, age } = this.user;
 
         return {
             name,
@@ -46,11 +41,7 @@ const show = (user) => {
     const index = user.getAttribute("data-user-id");
     let item = result[index];
     let char = new User(item);
-    let {
-        name,
-        height,
-        gender
-    } = char.showUser;
+    let { name, height, gender } = char.showUser;
     displayModal.style.display = "block";
     displayModal.innerHTML = `
             <div class="modal-content">
@@ -61,9 +52,16 @@ const show = (user) => {
                 <div class = "button closeModal" id="button-5">
                   <div id="translate"> </div> <a href = "#" > Close!</a> </div>
                 </div>
-            `
-    let close = document.querySelector('.closeModal')
+            `;
+    let close = document.querySelector(".closeModal");
     close.onclick = () => {
-        displayModal.style.display = 'none'
+        displayModal.style.display = "none";
+    };
+};
+
+let outClose = document.querySelector(".containers");
+window.onclick = function(event) {
+    if (event.target == outClose) {
+        displayModal.style.display = "none";
     }
 };
