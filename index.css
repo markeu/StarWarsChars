@@ -5,18 +5,12 @@
     --main-bg-color: rgba(46, 21, 49, 1);
 }
 
-
-/* General */
-
 body,
 html {
     height: 100%;
     box-sizing: border-box;
     background-color: rgb(212, 181, 181);
 }
-
-
-/* header styling */
 
 header {
     height: 100px;
